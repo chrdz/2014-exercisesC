@@ -1,0 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crodrigu <crodrigu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/09/02 04:04:40 by crodrigu          #+#    #+#             */
+/*   Updated: 2014/09/03 00:14:13 by crodrigu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int		ft_recursive_power(int nb, int power)
+{
+	if (power < 0)
+		return (0);
+	if (power == 0)
+		return (1);
+	return (ft_recursive_power(nb, power - 1)) * nb;
+}
