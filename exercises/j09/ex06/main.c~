@@ -1,0 +1,58 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crodrigu <crodrigu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/09/12 00:30:49 by crodrigu          #+#    #+#             */
+/*   Updated: 2014/09/12 00:58:52 by crodrigu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdlib.h>
+
+void    ft_destroy(char ***factory);
+
+int		main(void)
+{
+	char	***f;
+	int		l;
+	int		m;
+	int		n;
+
+	l = 0;
+	m = 0;
+	n = 0;
+	t = (char ***)malloc(sizeof(char **) * 3);
+	while (l < 3)
+	{
+		*t = (char **)malloc(sizeof(char *) * 3);
+		m = 0;
+		while (m < 3)
+		{
+			**t = (char *)malloc(sizeof(char) * 3);
+			m++;
+		}
+		l++;
+	}
+	l = 0;
+	m = 0;
+    while (l < 3)
+    {
+		m = 0;
+		while (m < 3)
+		{
+			n = 0;
+            while (n < 3)
+			{
+				f[l][m][n] = 'a' + n;
+				n++;
+			}
+			m++;
+		}
+		l++;
+    }
+	ft_destroy(f);
+	return (0);	
+}
