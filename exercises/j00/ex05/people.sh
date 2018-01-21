@@ -1,0 +1,1 @@
+ldapsearch "objectClass:apple-user" uid | grep -i "uid:" | cut -d " " -f 2 | sort -r

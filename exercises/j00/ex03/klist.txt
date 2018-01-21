@@ -1,0 +1,5 @@
+Credentials cache: API:11153
+        Principal: crodrigu@42.FR
+
+  Issued                Expires               Principal
+Aug 26 19:48:54 2014  Sep  2 19:48:24 2014  krbtgt/42.FR@42.FR
