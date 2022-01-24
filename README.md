@@ -1,3 +1,3 @@
-# C_exercises_2013
+# C_exercises_2014
 Work at Ecole 42. 
 May contain errors.
